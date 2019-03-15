@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="348dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_x="31dp"
+        android:layout_y="265dp"
+        android:text="This is First Activity"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMe" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="349dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_x="30dp"
+        android:layout_y="78dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/buttonMe"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="32dp"
+        android:layout_x="29dp"
+        android:layout_y="187dp"
+        android:onClick="fnGreet"
+        android:text="Click Me!"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYear" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="32dp"
+        android:layout_x="174dp"
+        android:layout_y="21dp"
+        android:onClick="fnThreadActivity"
+        android:text="To New Activity"
+        app:layout_constraintBottom_toTopOf="@+id/editTextName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="351dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_x="29dp"
+        android:layout_y="133dp"
+        android:ems="10"
+        android:hint="Your year of birth?"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <ImageView
+        android:id="@+id/imageViewPicture"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_x="51dp"
+        android:layout_y="353dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+</AbsoluteLayout>
